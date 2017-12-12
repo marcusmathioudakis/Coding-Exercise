@@ -1,0 +1,94 @@
+/**Custom Fonts**/
+@font-face {
+  font-family: JosefinSansRegular;
+  src: url(./fonts/JosefinSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: LatoLight;
+  src: url(./fonts/Lato-Light.ttf);
+}
+/**End Custom Fonts**/
+
+/** color scheme defined as css properties **/
+:root {
+  --dark: #76b0ba;
+}
+/** End color scheme defined as css properties **/
+
+body {
+  background-color: var(--dark);
+  font-family: "LatoLight", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+}
+
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-container-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "JosefinSansRegular", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 45px;
+}
+
+.Tile h2 {
+  font-size: 16px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+h2 span {
+  color: white;
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+}
+
+.App {
+  padding: 73px;
+}
+
+.TileGrid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Tile {
+  position: relative;
+}
+
+.TextInput {
+  margin-bottom: 37px;
+  font-size: 20px;
+}
+
+.TextInput input{
+  border:none;
+  margin-left: 10px;
+  border-radius: 15px;
+  font-size: 16px;
+  font-family: "LatoLight", Helvetica, Arial, sans-serif;
+  padding: 5px; 
+}
+
+/* Small Screens */
+@media all and (max-width: 600px) {
+  .App {
+    padding-top: 10px;
+  }
+}
+/* End Small Screens */
